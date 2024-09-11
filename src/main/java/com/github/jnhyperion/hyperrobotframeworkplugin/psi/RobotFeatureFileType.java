@@ -24,14 +24,13 @@ public class RobotFeatureFileType extends LanguageFileType {
 
     @NotNull
     public String getName() {
-        return "Robot Feature";
+        return "Robot Feature File";
     }
 
     @NotNull
     public String getDescription() {
-        return "Robot Feature Files";
+        return "Robot feature files for test cases";
     }
-
     @NotNull
     public String getDefaultExtension() {
         return "robot";

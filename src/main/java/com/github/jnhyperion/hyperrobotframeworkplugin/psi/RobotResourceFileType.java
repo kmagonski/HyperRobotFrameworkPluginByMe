@@ -24,14 +24,13 @@ public class RobotResourceFileType extends LanguageFileType {
 
     @NotNull
     public String getName() {
-        return "Robot Resource";
+        return "Robot Resource File";
     }
 
     @NotNull
     public String getDescription() {
-        return "Robot Resource Files";
+        return "Robot resource files for keywords and variables";
     }
-
     @NotNull
     public String getDefaultExtension() {
         return "resource";

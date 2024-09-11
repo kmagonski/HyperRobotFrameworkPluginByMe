@@ -48,9 +48,8 @@ public class HeadingImpl extends RobotPsiElementBase implements Heading {
 
     @Override
     public boolean isSettings() {
-        // TODO: better OO
         String text = getPresentableText();
-        return text.startsWith("*** Setting");
+        return text.startsWith("*** Settings") || text.startsWith("*** Ustawienia");
     }
 
     private boolean containsVariables() {
@@ -61,16 +60,17 @@ public class HeadingImpl extends RobotPsiElementBase implements Heading {
 
     @Override
     public boolean containsTestCases() {
-        // TODO: better OO
         String text = getPresentableText();
-        return text.startsWith("*** Test Case");
+        return text.startsWith("*** Test Case") || text.startsWith("*** Przypadki Testowe");
     }
 
     @Override
     public boolean containsKeywordDefinitions() {
-        // TODO: better OO
         String text = getPresentableText();
-        return text.startsWith("*** Keyword") || text.startsWith("*** User Keyword");
+        return text.startsWith("*** Keyword") ||
+                text.startsWith("*** User Keyword") ||
+                text.startsWith("*** Słowa Kluczowe") ||
+                text.startsWith("*** Słowo Kluczowe");
     }
 
     private boolean containsImports() {
