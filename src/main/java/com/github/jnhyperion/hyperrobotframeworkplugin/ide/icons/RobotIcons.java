@@ -2,6 +2,7 @@ package com.github.jnhyperion.hyperrobotframeworkplugin.ide.icons;
 
 import com.intellij.icons.AllIcons;
 import com.intellij.openapi.util.IconLoader;
+import com.intellij.ui.IconManager;
 
 import javax.swing.*;
 
@@ -11,8 +12,9 @@ import javax.swing.*;
  */
 public class RobotIcons {
 
-    public static final Icon FILE = IconLoader.findIcon("/images/robot.png");
-    public static final Icon RESOURCE = IconLoader.findIcon("/images/resource.png");
+    public static final Icon FILE = IconManager.getInstance().getIcon("/images/robot.png", RobotIcons.class);
+    public static final Icon RESOURCE = IconManager.getInstance().getIcon("/images/resource.png", RobotIcons.class);
+
     public static final Icon HEADING = AllIcons.Nodes.Tag;
     public static final Icon KEYWORD_DEFINITION = AllIcons.Nodes.Method;
     public static final Icon TEST_CASE = AllIcons.RunConfigurations.Junit;

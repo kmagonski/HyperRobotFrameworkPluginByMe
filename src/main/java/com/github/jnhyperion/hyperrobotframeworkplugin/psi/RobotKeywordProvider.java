@@ -40,9 +40,16 @@ public class RobotKeywordProvider {
         KEYWORD_TABLE.addSyntax(RobotTokenTypes.HEADING, "*** Variable ***");
 
         addRecommendation(RobotTokenTypes.HEADING, "*** Settings ***", "Settings");
+        addRecommendation(RobotTokenTypes.HEADING, "*** Ustawienia ***", "Ustawienia");
+
         addRecommendation(RobotTokenTypes.HEADING, "*** Test Cases ***", "Test Cases");
+        addRecommendation(RobotTokenTypes.HEADING, "*** Przypadki Testowe ***", "Przypadki Testowe");
+
         addRecommendation(RobotTokenTypes.HEADING, "*** Keywords ***", "Keywords");
+        addRecommendation(RobotTokenTypes.HEADING, "*** Słowa Kluczowe ***", "Słowa Kluczowe");
+
         addRecommendation(RobotTokenTypes.HEADING, "*** Variables ***", "Variables");
+        addRecommendation(RobotTokenTypes.HEADING, "*** Zmienne ***", "Zmienne");
 
         KEYWORD_TABLE.addSyntax(RobotTokenTypes.SETTING, "Suite Setup");
         KEYWORD_TABLE.addSyntax(RobotTokenTypes.SETTING, "Suite Precondition");
